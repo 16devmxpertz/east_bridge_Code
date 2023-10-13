@@ -1,0 +1,186 @@
+name: east_bridge
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter_otp_text_field: ^1.1.1
+  syncfusion_flutter_gauges: ^21.1.39
+  syncfusion_flutter_charts: ^21.1.39
+  
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+  buttons_tabbar: ^1.3.6
+  provider: ^6.0.5
+  intl_phone_field: ^3.1.0
+
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  sizer: ^2.0.15
+  flutter_simple_treeview: ^3.0.2
+  
+  flutter_screenutil: ^5.7.0
+  dart_mssql: ^0.2.2
+  sqljocky5: ^2.1.1
+  toast: ^0.3.0
+  fluttertoast: ^8.2.1
+  csc_picker: ^0.2.7
+  hijri_picker: ^3.0.0
+  http: ^0.13.6
+  country_picker: ^2.0.20
+  currency_picker: ^2.0.16
+  country_code_picker: ^3.0.0
+  pinput: ^2.2.31
+  get: ^4.6.5
+  html_editor_enhanced: ^2.5.1
+  file_picker: ^5.2.10
+  flutter_html: ^2.1.2
+  shared_preferences: ^2.1.1
+  open_file: ^3.3.2
+  dio: ^5.2.1+1
+  google_mlkit_barcode_scanning: ^0.7.0
+  url_launcher:
+  flutter_bloc: ^8.1.3
+  flutter_typeahead: ^4.6.2
+  flutter_local_notifications: ^8.2.0
+  flutter_fancy_tree_view: ^1.1.1
+  flutter_country_picker: ^0.1.6
+  flutter_pdfview: ^1.3.1
+  image_picker: ^1.0.4
+  syncfusion_flutter_datagrid: ^21.2.10
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/English-Logo.jpeg
+    - images/Notification_icon.png
+    - images/Logout_icon.png
+    - images/En_Flag.png
+    - images/Ar_Flag.png
+    - images/New_icon.png
+    - images/Edit_icon.png
+    - images/View_icon.png
+    - images/Cancel_icon.png
+    - images/Print_icon.png
+    - images/Download_icon.png
+    - images/SaveDraft_icon.png
+    - images/Dashboard.png
+    - images/money.png
+    - images/fund_icon.png
+    - images/1.png
+    - images/2.png
+    - images/3.png
+    - images/4.png
+    - images/5.png
+    - images/6.png
+    - images/7.png
+    - images/8.png
+    - images/9.png
+    - images/10.png
+    - images/11.png
+    - images/12.png
+    - images/13.png
+    - images/14.png
+    - images/15.png
+    - images/16.png
+    - images/17.png
+    - images/18.png
+    - images/19.png
+    - images/20.png
+    - images/21.png
+    - images/Fund.pdf
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Frutiger
+      fonts:
+        - asset: fonts/FrutigerLTArabic-45Light.otf
+        - asset: fonts/Frutiger LT Arabic 65 Bold.ttf
+        #- asset: fonts/FrutigerLTArabic-55Roman.otf
+        #- asset: fonts/FrutigerLTArabic-75Black.ttf
+           #style: italic
+    - family: Gotham
+      fonts:
+        - asset: fonts/GothamBook.ttf
+#        - asset: fonts/Gotham-Black.otf
+#        - asset: fonts/Gotham-Bold.otf
+#        - asset: fonts/Gotham-BookItalic.otf
+#        - asset: fonts/Gotham-Light.otf
+#        - asset: fonts/Gotham-Thin.otf
+#        - asset: fonts/Gotham-ThinItalic.otf
+#        - asset: fonts/Gotham-UltraItalic.otf
+#        - asset: fonts/Gotham-XLight.otf
+#        - asset: fonts/Gotham-XLightItalic.otf
+#        - asset: fonts/GothamBold.ttf
+#        - asset: fonts/GothamBoldItalic.ttf
+#        - asset: fonts/GothamBookItalic.ttf
+#        - asset: fonts/GothamLight.ttf
+#        - asset: fonts/GothamLightItalic.ttf
+#        - asset: fonts/GothamMedium.ttf
+#        - asset: fonts/GothamMedium_1.ttf
+#        - asset: fonts/GothamMediumItalic.ttf
+           #weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+flutter_intl:
+  enabled: true

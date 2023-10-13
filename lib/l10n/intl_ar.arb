@@ -1,0 +1,33 @@
+{
+    
+        "appTitle": "شرق بريدج",
+        "search": "بحث",
+        "Logout": "تسجيل الخروج",
+        "New": "جديد",
+        "View": "عرض",
+        "Edit": "تعديل",
+        "Cancel": "إلغاء",
+        "Print": "طباعة",
+        "Download": "تنزيل",
+        "SaveDraft": "حفظ كمسودة",
+        "Dashboard": "لوحة التحكم",
+        "Organization": "المؤسسة",
+        "KYC": "معرفة عميلك (KYC)",
+        "Onboarding": "تسجيل الدخول",
+        "Contracts": "عقود",
+        "Transfer": "تحويل",
+        "Reports": "تقارير",
+        "Investment": "استثمار",
+        "AccountDetails": "تفاصيل الحساب",
+        "PortfolioManagement": "إدارة المحفظة",
+        "Profile": "الملف الشخصي",
+        "Invoice": "فاتورة",
+        "SignOut": "تسجيل الخروج",
+        "Funds": "صناديق",
+        "KYCForm": "استمارة KYC",
+        "Individual": "فردي",
+        "Institutional": "مؤسسي",
+        "KnowYourClient": "معرفة عميلك (KYC)"
+      
+      
+}
