@@ -1,0 +1,39 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- livecodebranch11
+
+pr:
+- '*'
+
+pool:
+  vmImage: 'windows-latest'
+
+jobs:
+- job: Build
+  displayName: 'Build and Test'
+  steps:
+  - checkout: self
+
+  - powershell: |
+      echo "Downloading and installing Flutter"
+      git clone https://github.com/flutter/flutter.git -b stable
+      $env:PATH += ";$(Get-Location)\flutter\bin"
+      flutter doctor
+    displayName: 'Install Flutter'
+
+  - script: |
+      flutter pub get
+      flutter test
+      flutter build web
+    displayName: 'Build and Test'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(Build.SourcesDirectory)/build/web'
+      artifactName: 'web'
+      publishLocation: 'Container'
+    displayName: 'Publish Web Artifacts'
